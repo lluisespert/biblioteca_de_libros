@@ -7,3 +7,10 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
 }
+
+
+function formularioLibros() {
+
+    window.open("../vista/formulario_libros.html", "_self");
+
+}

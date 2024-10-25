@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <title>Formulario Libros</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <meta name="description" content="Gestión de libros personales"/>
+
+        <meta name="author" content="Lluís Espert Cuquerella"/>
+
+        <meta charset="UTF-8"/>
+
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <script src="../modelo/funciones.js"></script>
+
+        <link rel="stylesheet" href="../modelo/estilos.css">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-info"></nav>
+
+        <div class="row">
+
+            <div class="col-lg-4"></div>
+
+            <div class="col-lg-4">
+
+                <div class="container mt-3">
+
+                    <form action="../controlador/consultas.php" class="was-validated">
+
+                        <div class="mb-3">
+
+                            <label for="titulo_del_libro" class="form-label">Nombre del Libro</label>
+
+                            <input type="text" class="form-control" id="titulo" placeholder="Introduce el nombre del libro" name="titulo" required>
+
+                            <div class="valid-feedback">Nombre valido</div>
+
+                            <div class="invalid-feedback">Por favor introduce el nombre del titulo del libro</div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="autor_del_libro" class="form-label">Autor del libro</label>
+
+                            <input type="text" class="form-control" id="autor" placeholder="Introduce el autor del libro" name="autor" required>
+
+                            <div class="valid-feedback">Autor valido</div>
+
+                            <div class="invalid-feedback">Por favor introduce el nombre del autor</div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="tematica" class="form-label">Tematica del libro</label>
+
+                            <input type="text" class="form-control" id="tematica" placeholder="Introduce la tematica del libro" name="tematica" required>
+
+                            <div class="valid-feedback">Tematica valida</div>
+
+                            <div class="invalid-feedback">Por favor introduce la tematica del libro</div>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="resumen" class="form-label">Resumen del libro</label>
+
+                            <textarea  id="resumen" name="resumen" rows="6" cols="80"></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary centrarBoton">Introducir</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
