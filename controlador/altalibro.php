@@ -8,9 +8,7 @@
 
     $tematica = $_POST['tematica'];
 
-    $resumen = $_POST['resumen'];
-
-    $mbd ->query ($sql = "INSERT INTO  libros (nombrelibro, autor, tematica, resumen) VALUES ('$titulo', '$autor', '$tematica', '$resumen');");
+    $mbd ->query ($sql = "INSERT INTO  libros (nombrelibro, autor, tematica) VALUES ('$titulo', '$autor', '$tematica');");
 
 ?>
 

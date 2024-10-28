@@ -14,3 +14,9 @@ function formularioLibros() {
     window.open("../vista/formulario_libros.html", "_self");
 
 }
+
+function consultar() {
+
+    window.open("../vista/listar_libros.php", "_self");
+
+}
